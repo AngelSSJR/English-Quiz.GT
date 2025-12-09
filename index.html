@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Resources - Sistema de Aprendizaje</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body id="app-body">
+    
+    <button id="pro-button" onclick="showProModal()">Switch to PRO</button>
+
+    <div id="ranking-widget" style="display: none;">
+        </div>
+    
+    <div id="pro-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div id="pro-content">
+                <h2>👑 Switch to PRO and Unlock the EXPERT Level 👑</h2>
+                <div class="animation-container">
+                    <img src="rana-que-salta-meme-meme-rana.gif" alt="Animation of a frog coding" />
+                </div>
+                
+                <div id="pro-plans">
+                    </div>
+                
+                <div style="margin-top: 20px;">
+                    <h4>Selecciona tu Método de Pago:</h4>
+                    <select id="payment-method" style="padding: 10px; border-radius: 5px; width: 80%;">
+                        <option value="Visa">💳 Tarjeta de Crédito (Visa/Mastercard)</option>
+                        <option value="PayPal">🅿️ PayPal</option>
+                        <option value="Crypto">₿ Criptomoneda (BTC/ETH)</option>
+                    </select>
+                </div>                
+
+                <button class="btn btn-nav" onclick="closeProModal()">Cerrar</button>
+
+
+            </div>
+
+            <div id="pro-error-message" style="display: none;">
+                </div>
+            </div>
+    </div>
+    
+    <div id="gif-modal" class="modal-overlay" style="display: none;">
+        <div id="gif-container" class="gif-content">
+            </div>
+    </div>
+
+
+    <div id="app-container">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
